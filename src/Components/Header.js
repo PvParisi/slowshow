@@ -1,5 +1,6 @@
 import React from 'react';
 import './Header.css';
+import SocialButtons from './SocialButtons';
 
 const Header = () => {
     return (
@@ -14,6 +15,7 @@ const Header = () => {
                         </div>
                     </div>
                 </div>
+                <SocialButtons />
             </div>
         </div>
     );
