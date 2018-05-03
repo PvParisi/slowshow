@@ -1,18 +1,18 @@
 import React from 'react';
+import './SocialButtons.css';
 
 const SocialButtons = () => {
     return (
-        <div className="row" style={{ 'marginTop': '24px', 'marginLeft': '200px', 'marginRight': '200px' }}>
-            <div className='col-md-6'>
-                <button className="btn btn-just-icon  btn-facebook" onClick={openFacebook}>
-                    <i className="fa fa-facebook"> </i>
-                </button>
-            </div>
-            <div className='col-md-6'>
-                <button className="btn btn-just-icon btn-twitter" onClick={openTwitter}>
-                    <i className="fa fa-twitter"></i>
-                </button>
-            </div>
+        <div className='sharing-area text-center'>
+            {/* <div class="row justify-content-center">
+                <h4>Thank you for supporting us!</h4>
+            </div> */}
+            <button className='btn btn-raised btn-facebook m-3' onClick={openFacebook}>
+                <i className='fa fa-facebook'></i> Like Us
+            </button>
+            <button className='btn btn-raised btn-twitter m-3' onClick={openTwitter}>
+                <i className='fa fa-twitter'></i> Follow Us
+            </button>
         </div>
     );
 }
